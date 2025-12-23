@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
 
 class RealResultsSection extends StatelessWidget {
   const RealResultsSection({super.key});
@@ -15,7 +16,7 @@ class RealResultsSection extends StatelessWidget {
             children: const [
               Text("Real Results",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-              Text("See All", style: TextStyle(color: Colors.pink)),
+              Text("See All", style: TextStyle(color: AppColors.primary)),
             ],
           ),
           const SizedBox(height: 12),
@@ -29,7 +30,7 @@ class RealResultsSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: Container(
                   width: 90,
-                  color: Colors.grey[200],
+                  color: AppColors.background,
                 ),
               ),
             ),

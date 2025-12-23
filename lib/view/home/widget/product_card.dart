@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
 import 'package:task1/view/details_page/details.dart';
 
 class ProductCard extends StatelessWidget {
@@ -34,8 +35,8 @@ class ProductCard extends StatelessWidget {
                 top: 10,
                 right: 10,
                 child: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  child: Icon(Icons.favorite, color: Colors.pink),
+                  backgroundColor: AppColors.surface,
+                  child: Icon(Icons.favorite, color: AppColors.primary),
                 ),
               ),
             ],
@@ -45,7 +46,7 @@ class ProductCard extends StatelessWidget {
             lipstick.brandName.toUpperCase(),
             style: const TextStyle(
               fontSize: 12,
-              color: Colors.grey,
+              color: AppColors.textSecondary,
               letterSpacing: 1,
             ),
           ),

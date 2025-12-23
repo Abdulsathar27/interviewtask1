@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task1/controllers/product_controllers.dart';
+import 'package:task1/core/constants/app_colors.dart';
+import 'package:task1/core/constants/app_texts.dart';
 
 class SearchHeader extends StatelessWidget {
   const SearchHeader({super.key});
@@ -15,14 +17,14 @@ class SearchHeader extends StatelessWidget {
             child: TextField(
               onChanged: (value) {
                 context.read<ProductController>().fetchProducts(
-                      value.isEmpty ? 'lipstick' : value,
+                      value.isEmpty ? AppTexts.lipstick : value,
                     );
               },
               decoration: InputDecoration(
-                hintText: 'Lipstick',
+                hintText: AppTexts.searchHint,
                 prefixIcon: const Icon(Icons.search),
                 filled: true,
-                fillColor: Colors.grey.shade100,
+                fillColor: AppColors.surface,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                   borderSide: BorderSide.none,
@@ -38,10 +40,10 @@ class SearchHeader extends StatelessWidget {
                 right: 0,
                 child: CircleAvatar(
                   radius: 7,
-                  backgroundColor: Colors.pink,
+                  backgroundColor: AppColors.primary,
                   child: Text(
                     '2',
-                    style: TextStyle(fontSize: 10, color: Colors.white),
+                    style: TextStyle(fontSize: 10, color: AppColors.buttonText),
                   ),
                 ),
               )

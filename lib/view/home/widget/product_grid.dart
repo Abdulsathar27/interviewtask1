@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task1/controllers/product_controllers.dart';
+import 'package:task1/core/constants/app_colors.dart';
+import 'package:task1/core/constants/app_texts.dart';
 import 'package:task1/view/home/widget/product_card.dart';
 
 class ProductGrid extends StatelessWidget {
@@ -10,10 +12,18 @@ class ProductGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<ProductController>(
       builder: (context, controller, _) {
-        if (controller.products.isEmpty) {
+        if (controller.isLoading) {
+          return const Center(
+            child: Padding(
+              padding: EdgeInsets.all(40),
+              child: Center(child: CircularProgressIndicator(color: AppColors.primary)),
+
+            ),
+          );
+        }else if (controller.products.isEmpty) {
           return const Padding(
             padding: EdgeInsets.all(40),
-            child: Text("No products found"),
+            child: Text(AppTexts.noProductsFound, textAlign: TextAlign.center,),
           );
         }
 

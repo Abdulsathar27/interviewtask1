@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
 import 'package:task1/model/model.dart';
 import 'package:task1/view/details_page/widgets/addtocartbar.dart';
 import 'package:task1/view/details_page/widgets/descriptionsection.dart';
@@ -15,7 +16,7 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.background,
       body: Stack(
         children: [
           SingleChildScrollView(

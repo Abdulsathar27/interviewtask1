@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
+import 'package:task1/core/constants/app_texts.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({super.key});
@@ -6,15 +8,15 @@ class BottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      selectedItemColor: Colors.pink,
-      unselectedItemColor: Colors.grey,
+      selectedItemColor: AppColors.primary,
+      unselectedItemColor: AppColors.textSecondary,
       currentIndex: 1,
       items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-        BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Brands'),
-        BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorites'),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: AppTexts.home),
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: AppTexts.search),
+        BottomNavigationBarItem(icon: Icon(Icons.star), label: AppTexts.brands),
+        BottomNavigationBarItem(icon: Icon(Icons.favorite), label: AppTexts.favorites),
+        BottomNavigationBarItem(icon: Icon(Icons.person), label: AppTexts.profile),
       ],
     );
   }

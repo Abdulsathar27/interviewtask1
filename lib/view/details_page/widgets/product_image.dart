@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
 
 class ProductImage extends StatelessWidget {
   final String imageUrl;
@@ -24,7 +25,7 @@ class ProductImage extends StatelessWidget {
               width: index == 0 ? 20 : 8,
               height: 8,
               decoration: BoxDecoration(
-                color: index == 0 ? Colors.pink : Colors.grey[300],
+                color: index == 0 ? AppColors.primary : AppColors.background,
                 borderRadius: BorderRadius.circular(10),
               ),
             ),

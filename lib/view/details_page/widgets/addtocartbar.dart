@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
+import 'package:task1/core/constants/app_texts.dart';
 
 class AddToCartBar extends StatelessWidget {
   const AddToCartBar({super.key});
@@ -11,7 +13,7 @@ class AddToCartBar extends StatelessWidget {
       right: 0,
       child: Container(
         padding: const EdgeInsets.all(16),
-        color: Colors.white,
+        color: AppColors.background,
         child: Row(
           children: [
             IconButton(
@@ -21,7 +23,7 @@ class AddToCartBar extends StatelessWidget {
             Expanded(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink,
+                  backgroundColor: AppColors.primary,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
@@ -29,8 +31,8 @@ class AddToCartBar extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: const Text(
-                  "Add to Cart   \$32.00",
-                  style: TextStyle(fontSize: 16),
+                  AppTexts.addToCart,
+                  style: TextStyle(fontSize: 16,color: AppColors.buttonText),
                 ),
               ),
             ),

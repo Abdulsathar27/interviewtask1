@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
 
 class ReviewsSection extends StatelessWidget {
   const ReviewsSection({super.key});
@@ -30,8 +31,8 @@ class ReviewsSection extends StatelessWidget {
                   Expanded(
                     child: LinearProgressIndicator(
                       value: (5 - index) / 5,
-                      color: Colors.pink,
-                      backgroundColor: Colors.grey[300],
+                      color: AppColors.primary,
+                      backgroundColor: AppColors.background,
                     ),
                   ),
                 ],

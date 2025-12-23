@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
 import 'package:task1/model/model.dart';
 
 class ProductInfo extends StatelessWidget {
@@ -17,7 +18,7 @@ class ProductInfo extends StatelessWidget {
             style: const TextStyle(
               fontSize: 12,
               letterSpacing: 1,
-              color: Colors.pink,
+              color: AppColors.primary,
             ),
           ),
           const SizedBox(height: 6),
@@ -31,13 +32,13 @@ class ProductInfo extends StatelessWidget {
           const SizedBox(height: 8),
           Row(
             children: const [
-              Icon(Icons.star, color: Colors.orange, size: 18),
-              Icon(Icons.star, color: Colors.orange, size: 18),
-              Icon(Icons.star, color: Colors.orange, size: 18),
-              Icon(Icons.star, color: Colors.orange, size: 18),
-              Icon(Icons.star_half, color: Colors.orange, size: 18),
+              Icon(Icons.star, color: AppColors.primary, size: 18),
+              Icon(Icons.star, color: AppColors.primary, size: 18),
+              Icon(Icons.star, color: AppColors.primary, size: 18),
+              Icon(Icons.star, color: AppColors.primary, size: 18),
+              Icon(Icons.star_half, color: AppColors.primary, size: 18),
               SizedBox(width: 6),
-              Text("4.8 (1,204 Reviews)", style: TextStyle(color: Colors.grey)),
+              Text("4.8 (1,204 Reviews)", style: TextStyle(color: AppColors.textSecondary)),
             ],
           ),
           const SizedBox(height: 12),
@@ -48,7 +49,7 @@ class ProductInfo extends StatelessWidget {
           const SizedBox(height: 4),
           const Text(
             "Free shipping on orders over \$50",
-            style: TextStyle(color: Colors.grey),
+            style: TextStyle(color: AppColors.textSecondary),
           ),
         ],
       ),

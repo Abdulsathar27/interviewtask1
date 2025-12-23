@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
 
 class DetailsAppBar extends StatelessWidget {
   const DetailsAppBar({super.key});
@@ -27,9 +28,9 @@ class DetailsAppBar extends StatelessWidget {
 
   Widget _icon(IconData icon, VoidCallback onTap) {
     return CircleAvatar(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.background,
       child: IconButton(
-        icon: Icon(icon, color: Colors.black),
+        icon: Icon(icon, color: AppColors.textPrimary),
         onPressed: onTap,
       ),
     );

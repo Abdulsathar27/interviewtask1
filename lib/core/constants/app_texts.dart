@@ -1,30 +1,20 @@
 class AppTexts {
   AppTexts._();
-
-  /// ---------- APP ----------
-  static const String appName = 'Beauty Store';
-  static const String appTagline = 'Find your perfect beauty match';
-
-  /// ---------- COMMON ----------
-  static const String retry = 'Retry';
-  static const String loading = 'Loading...';
-  static const String somethingWentWrong = 'Something went wrong';
-  static const String noDataFound = 'No data found';
-
-  /// ---------- SEARCH ----------
-  static const String searchHint = 'Search for products';
-  static const String searchTitle = 'Search Results';
-  static const String defaultSearchTitle = 'Popular Products';
-
-  /// ---------- PRODUCT ----------
-  static const String productDetails = 'Product Details';
-  static const String reviews = 'Reviews';
+  static const String lipstick = 'lipstick';
+  static const String searchHint = 'Search products';
+  static const String noProductsFound = 'No products found';
+  static const String limitedTime = 'LIMITED TIME';
+  static const String offerText = "20% OFF\nALL LIPSTICKS";
+  static const String home = 'Home';
+  static const String search = 'Search';
+  static const String brands = 'Brands';
+  static const String favorites = 'Favorites';
+  static const String profile = 'Profile';
   static const String addToCart = 'Add to Cart';
-  static const String outOfStock = 'Out of Stock';
-  static const String price = 'Price';
-  static const String brand = 'Brand';
+  static const String description = 'Description';
+  static const String longWearingDescription =  "A long-wearing, high-pigment liquid lipstick with a smooth, matte finish and all-day lightweight comfort. Infused with Vitamin E and Avocado Oil to keep lips soft and hydrated.";
+  static const String readMore = "Read More";
 
-  /// ---------- ERRORS ----------
-  static const String networkError = 'Please check your internet connection';
-  static const String timeoutError = 'Request timed out';
 }
+
+

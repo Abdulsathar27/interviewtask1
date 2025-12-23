@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
+import 'package:task1/core/constants/app_texts.dart';
 
 class OfferBanner extends StatelessWidget {
   const OfferBanner({super.key});
@@ -15,7 +17,7 @@ class OfferBanner extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 gradient: const LinearGradient(
-                  colors: [Color(0xFF6A1B1A), Color(0xFFD16C75)],
+                  colors: [AppColors.customColor2, AppColors.customColor],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
@@ -26,14 +28,14 @@ class OfferBanner extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     Text(
-                      "LIMITED TIME",
-                      style: TextStyle(color: Colors.white70),
+                      AppTexts.limitedTime,
+                      style: TextStyle(color: AppColors.buttonText),
                     ),
                     SizedBox(height: 6),
                     Text(
-                      "20% OFF\nALL LIPSTICKS",
+                      AppTexts.offerText,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: AppColors.buttonText,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),

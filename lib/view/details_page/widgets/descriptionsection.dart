@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:task1/core/constants/app_colors.dart';
+import 'package:task1/core/constants/app_texts.dart';
 
 class DescriptionSection extends StatelessWidget {
   const DescriptionSection({super.key});
@@ -10,15 +12,15 @@ class DescriptionSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
-          Text("Description",
+          Text(AppTexts.description,
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           SizedBox(height: 8),
           Text(
-            "A long-wearing, high-pigment liquid lipstick with a smooth, matte finish and all-day lightweight comfort. Infused with Vitamin E and Avocado Oil to keep lips soft and hydrated.",
-            style: TextStyle(color: Colors.grey),
+            AppTexts.longWearingDescription,
+            style: TextStyle(color: AppColors.textSecondary),
           ),
           SizedBox(height: 8),
-          Text("Read More", style: TextStyle(color: Colors.pink)),
+          Text(AppTexts.readMore, style: TextStyle(color: AppColors.primary)),
         ],
       ),
     );
