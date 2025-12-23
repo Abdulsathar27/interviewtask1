@@ -14,6 +14,8 @@ class AppTexts {
   static const String description = 'Description';
   static const String longWearingDescription =  "A long-wearing, high-pigment liquid lipstick with a smooth, matte finish and all-day lightweight comfort. Infused with Vitamin E and Avocado Oil to keep lips soft and hydrated.";
   static const String readMore = "Read More";
+  static const String retry = "Try Again";
+
 
 }
 
